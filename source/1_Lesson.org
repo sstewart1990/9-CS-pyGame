@@ -188,8 +188,8 @@ pygame.draw.line(screen, green, (0, 0), (800, 200), 4)
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- For these tasks, upload screenshots of your work as well as your .py code files to collect the badges.
-- *Silver:* Draw a car or house using code. An example is shown below, made from two rectangles, two circles and a 4-pixel thick line. 
-[[./img/1_car.png]]
-- *Gold:* Add comments below your code from the silver task, explaining in your own words how [[http://www.rapidtables.com/web/color/RGB_Color.htm][RGB colours]] work.
-- *Platinum:* Create some variables for *two* new colours. Pygame also has the shapes =ellipse= and =polygon=. Research online how to use these, then draw an example of them both using your new colours.
+- For this lesson’s assessment you are marking your own work. This will allow you see your own progress. This process is often used for online training programmes and is called the ‘honour’ or ‘trust system’. Obviously the key to these systems is being honest. Your teacher will randomly check some students work to moderate their marking.
+  - *Silver*:  Can you draw a car or house using code made from rectangles, circles and lines?
+  - *Gold*: Can you add comments below your code from the silver task, explaining in your own words how RGB colours work?
+  - *Platinum*: Can you create two variables to store two new colours? Have you researched how to draw the shapes ellipse and polygon? Can you draw examples of them both shapes using your two new colours.
+- Once you have done above tasks and tested they are working as intended, click [[https://www.bournetolearn.com/quizzes/y9-gameDev/Lesson_1][here]] for the self assessment.
