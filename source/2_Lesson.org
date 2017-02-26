@@ -238,7 +238,7 @@ if player1X > SCREENWIDTH:
 - Can you make the square bounce up and down?
 - Does it have to be a square?
 - Could it be green travelling one way, but red travelling the other?
-** Badge It
+** Badge Tasks
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
@@ -248,3 +248,10 @@ if player1X > SCREENWIDTH:
   - Moves to x = 100, y = 700
   - Re-appears at x = 100, y = 100
 - *Platinum:* Make a shape move diagonally and bounce off all the sides of the screen.
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- For this lesson’s assessment you are marking your own work. This will allow you see your own progress. This process is often used for online training programmes and is called the ‘honour’ or ‘trust system’. Obviously the key to these systems is being honest. Your teacher will randomly check some students work to moderate their marking.
+- Once you have done above tasks and tested they are working as intended, click [[https://www.bournetolearn.com/quizzes/y9-gameDev/Lesson_2][here]] for the self assessment.
