@@ -208,5 +208,5 @@ if event.type == pygame.MOUSEBUTTONUP:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- Be honest and take the quiz to assess your own progress. Your teacher will randomly check some students work to moderate their marking.
+- Be honest and take the quiz below to assess your own progress. Your teacher will randomly check some students work to moderate their marking.
 - Once you have done above tasks and tested they are working as intended, click [[https://www.bournetolearn.com/quizzes/y9-gameDev/Lesson_6][here]] for the self assessment.
