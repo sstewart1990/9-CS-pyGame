@@ -195,10 +195,18 @@ if event.type == pygame.MOUSEBUTTONUP:
 #+BEGIN_HTML
 <iframe width="650" height="393" src="https://www.youtube.com/embed/p095HXXKNLc" frameborder="0" allowfullscreen></iframe>
 #+END_HTML
-** Badge It
+** Badge Tasks
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:      
 - *Silver:* Add comments to your code and in comments below your code.
 - *Gold:* The target is currently drawn over the top of the player - fix this bug so that it appears behind. 
 - *Platinum:* Change the target circle to an image of your choice instead.
+
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- Be honest and take the quiz to assess your own progress. Your teacher will randomly check some students work to moderate their marking.
+- Once you have done above tasks and tested they are working as intended, click [[https://www.bournetolearn.com/quizzes/y9-gameDev/Lesson_6][here]] for the self assessment.

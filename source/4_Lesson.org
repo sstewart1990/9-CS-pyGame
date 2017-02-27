@@ -225,10 +225,17 @@ while gameState != "exit":  # game loop - note: everything in the mainloop is in
 - Run the program with =Shift-F10=, and steer the square with the left/right cursor keys. 
 - What's different between this code and the previous version?
 - Comment the lines of code to explain what they do. 
-** Badge It
+** Badge Tasks
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
 - *Silver:* Add the ability to move =player1= up and down *or* add comments to your code to explain how it works.
 - *Gold:* Add the functionality to increase and decrease =player1Speed= with the *Q* and *W* keys.
 - *Platinum*: Add a feature to make =player1= visible/invisible when the space bar is pressed, *or* stop the square from travelling beyond the edge of the window. 
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- Be honest and take the quiz to assess your own progress. Your teacher will randomly check some students work to moderate their marking.
+- Once you have done above tasks and tested they are working as intended, click [[https://www.bournetolearn.com/quizzes/y9-gameDev/Lesson_4][here]] for the self assessment.
