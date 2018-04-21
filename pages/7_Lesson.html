@@ -71,7 +71,11 @@ for the JavaScript code in this tag.
       <li><a href="2_Lesson.html">Week2</a></li>
       <li><a href="3_Lesson.html">Week3</a></li>
       <li><a href="4_Lesson.html">Week4</a></li> 
-      <li><a href="5_Lesson.html">Week5</a></li>     
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href=“6_Lesson.html">Week6</a></li>
+      <li><a href=“7_Lesson.html">Week7</a></li>
+      <li><a href=“8_Lesson.html">Week8</a></li>
+      <li><a href=“9_Lesson.html">Week9</a></li>     
       <li><a href="assessment.html">Assessment</a></li>
     </ul>
   </div>
@@ -172,26 +176,26 @@ END WHILE
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">getNumbers</span>():
-    <span style="color: #268bd2;">num1</span> = <span style="color: #657b83; font-weight: bold;">int</span>(<span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">"What number would you like? "</span>))
-    <span style="color: #268bd2;">num2</span> = <span style="color: #657b83; font-weight: bold;">int</span>(<span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">"What number to multiply it by? "</span>))
-    <span style="color: #859900; font-weight: bold;">return</span> num1, num2
+<pre class="src src-python">def getNumbers():
+    num1 = int(input("What number would you like? "))
+    num2 = int(input("What number to multiply it by? "))
+    return num1, num2
 
-<span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">doTheMaths</span>(a, b):
-    <span style="color: #268bd2;">theAnswer</span> = a * b
-    <span style="color: #859900; font-weight: bold;">return</span> theAnswer
+def doTheMaths(a, b):
+    theAnswer = a * b
+    return theAnswer
 
 
-<span style="color: #2aa198;">''' THE ACTUAL PROGRAM STARTS HERE '''</span>
-<span style="color: #268bd2;">keepGoing</span> = <span style="color: #268bd2; font-weight: bold;">True</span>
-<span style="color: #859900; font-weight: bold;">while</span> keepGoing == <span style="color: #268bd2; font-weight: bold;">True</span>:
-    <span style="color: #268bd2;">firstNumber</span>, <span style="color: #268bd2;">secondNumber</span> = getNumbers()
-    <span style="color: #268bd2;">result</span> = doTheMaths (firstNumber, secondNumber)
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"The answer is "</span> + <span style="color: #657b83; font-weight: bold;">str</span>(result))
+''' THE ACTUAL PROGRAM STARTS HERE '''
+keepGoing = True
+while keepGoing == True:
+    firstNumber, secondNumber = getNumbers()
+    result = doTheMaths (firstNumber, secondNumber)
+    print("The answer is " + str(result))
 
-    <span style="color: #268bd2;">yourAnswer</span> = <span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">"Again? "</span>)
-    <span style="color: #859900; font-weight: bold;">if</span> yourAnswer == <span style="color: #2aa198;">"no"</span>:
-        <span style="color: #268bd2;">keepGoing</span> = <span style="color: #268bd2; font-weight: bold;">False</span>
+    yourAnswer = input("Again? ")
+    if yourAnswer == "no":
+	keepGoing = False
 </pre>
 </div>
 <ul class="org-ul">
@@ -245,7 +249,7 @@ CALL textDraw("Good morning, Dave")
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">fontName</span> = pygame.font.match_font(<span style="color: #2aa198;">'arial'</span>)
+<pre class="src src-python">fontName = pygame.font.match_font('arial')
 </pre>
 </div>
 <ul class="org-ul">
@@ -263,9 +267,9 @@ CALL textDraw("Good morning, Dave")
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">textDraw</span>(msgText):
-    <span style="color: #268bd2;">font</span> = pygame.font.Font(fontName, 22)
-    <span style="color: #268bd2;">text_surface</span> = font.render(msgText, <span style="color: #268bd2; font-weight: bold;">True</span>, white)
+<pre class="src src-python">def textDraw(msgText):
+    font = pygame.font.Font(fontName, 22)
+    text_surface = font.render(msgText, True, white)
     screen.blit(text_surface, (100, 100))
 </pre>
 </div>
@@ -288,7 +292,7 @@ CALL textDraw("Good morning, Dave")
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python">textDraw(<span style="color: #2aa198;">"Good morning, Dave"</span>)
+<pre class="src src-python">textDraw("Good morning, Dave")
 </pre>
 </div>
 <ul class="org-ul">
@@ -315,9 +319,9 @@ CALL textDraw("Good morning, Dave")
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">textDraw</span>(msgText, XYPosition):
-    <span style="color: #268bd2;">font</span> = pygame.font.Font(fontName, 22)
-    <span style="color: #268bd2;">text_surface</span> = font.render(msgText, <span style="color: #268bd2; font-weight: bold;">True</span>, white)
+<pre class="src src-python">def textDraw(msgText, XYPosition):
+    font = pygame.font.Font(fontName, 22)
+    text_surface = font.render(msgText, True, white)
     screen.blit(text_surface, XYPosition)
 </pre>
 </div>
@@ -338,7 +342,7 @@ CALL textDraw("Good morning, Dave")
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python">textDraw(<span style="color: #2aa198;">"Good morning, Dave"</span>, (400, 60))
+<pre class="src src-python">textDraw("Good morning, Dave", (400, 60))
 </pre>
 </div>
 <ul class="org-ul">

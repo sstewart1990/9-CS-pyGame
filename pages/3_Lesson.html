@@ -72,6 +72,10 @@ for the JavaScript code in this tag.
       <li><a href="3_Lesson.html">Week3</a></li>
       <li><a href="4_Lesson.html">Week4</a></li>
       <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href=“6_Lesson.html">Week6</a></li>
+      <li><a href=“7_Lesson.html">Week7</a></li>
+      <li><a href=“8_Lesson.html">Week8</a></li>
+      <li><a href=“9_Lesson.html">Week9</a></li>
       <li><a href="assessment.html">Assessment</a></li>
     </ul>
   </div>
@@ -173,8 +177,8 @@ for the JavaScript code in this tag.
 <div class="org-src-container">
 
 <pre class="src src-python">screen.fill(black)
-<span style="color: #268bd2;">mousePosition</span> = pygame.mouse.get_pos()
-<span style="color: #859900; font-weight: bold;">print</span>(mousePosition)
+mousePosition = pygame.mouse.get_pos()
+print(mousePosition)
 </pre>
 </div>
 <ul class="org-ul">
@@ -197,11 +201,11 @@ for the JavaScript code in this tag.
 <div class="org-src-container">
 
 <pre class="src src-python">screen.fill(black)
-<span style="color: #268bd2;">mousePosition</span> = pygame.mouse.get_pos()
-<span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">print(mousePosition)   &lt;&lt;&lt; UMCOMMENT THIS TO SEE POSITION DATA.</span>
-<span style="color: #268bd2;">player1X</span> = mousePosition[0]
-<span style="color: #268bd2;">player1Y</span> = mousePosition[1]
-<span style="color: #268bd2;">player1</span> = pygame.draw.rect(screen, red, (player1X, player1Y, 40, 40))
+mousePosition = pygame.mouse.get_pos()
+# print(mousePosition)   &lt;&lt;&lt; UMCOMMENT THIS TO SEE POSITION DATA.
+player1X = mousePosition[0]
+player1Y = mousePosition[1]
+player1 = pygame.draw.rect(screen, red, (player1X, player1Y, 40, 40))
 </pre>
 </div>
 <ul class="org-ul">
@@ -239,10 +243,10 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">if</span> pygame.mouse.get_pressed()[0] == <span style="color: #268bd2; font-weight: bold;">True</span>:
+<pre class="src src-python">if pygame.mouse.get_pressed()[0] == True:
     pygame.draw.rect(screen, green, (100, 100, 100, 100))
-<span style="color: #859900; font-weight: bold;">elif</span> pygame.mouse.get_pressed()[1] == <span style="color: #268bd2; font-weight: bold;">True</span>:
-    <span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"You clicked a different button"</span>)
+elif pygame.mouse.get_pressed()[1] == True:
+    print("You clicked a different button")
 </pre>
 </div>
 </div>

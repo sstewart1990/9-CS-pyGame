@@ -71,7 +71,11 @@ for the JavaScript code in this tag.
       <li><a href="2_Lesson.html">Week2</a></li>
       <li><a href="3_Lesson.html">Week3</a></li>
       <li><a href="4_Lesson.html">Week4</a></li> 
-      <li><a href="5_Lesson.html">Week5</a></li>     
+      <li><a href="5_Lesson.html">Week5</a></li>   
+      <li><a href=“6_Lesson.html">Week6</a></li>
+      <li><a href=“7_Lesson.html">Week7</a></li>
+      <li><a href=“8_Lesson.html">Week8</a></li>
+      <li><a href=“9_Lesson.html">Week9</a></li>  
       <li><a href="assessment.html">Assessment</a></li>
     </ul>
   </div>
@@ -141,11 +145,11 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">gameState</span> = <span style="color: #2aa198;">"running"</span>  <span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">controls which state the games is in</span>
-<span style="color: #268bd2;">player1Image</span> = pygame.image.load(<span style="color: #2aa198;">"img/crossHair.png"</span>)
-<span style="color: #268bd2;">targetImage</span> = pygame.image.load(<span style="color: #2aa198;">"img/bird1.png"</span>)
-<span style="color: #268bd2;">targetX</span> = 100
-<span style="color: #268bd2;">targetY</span> = 100
+<pre class="src src-python">gameState = "running"  # controls which state the games is in
+player1Image = pygame.image.load("img/crossHair.png")
+targetImage = pygame.image.load("img/bird1.png")
+targetX = 100
+targetY = 100
 </pre>
 </div>
 <ul class="org-ul">
@@ -166,12 +170,12 @@ for the JavaScript code in this tag.
 <div class="org-src-container">
 
 <pre class="src src-python">screen.fill(white)
-<span style="color: #268bd2;">mousePos</span> = pygame.mouse.get_pos()
-<span style="color: #268bd2;">player1X</span> = pygame.mouse.get_pos()[0] - 50
-<span style="color: #268bd2;">player1Y</span> = pygame.mouse.get_pos()[1] - 50
+mousePos = pygame.mouse.get_pos()
+player1X = pygame.mouse.get_pos()[0] - 50
+player1Y = pygame.mouse.get_pos()[1] - 50
 
-<span style="color: #268bd2;">target</span> = screen.blit(targetImage, (targetX, targetY))
-<span style="color: #268bd2;">player1</span> = screen.blit(player1Image, (player1X, player1Y))
+target = screen.blit(targetImage, (targetX, targetY))
+player1 = screen.blit(player1Image, (player1X, player1Y))
 </pre>
 </div>
 
@@ -218,13 +222,13 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">import</span> math
+<pre class="src src-python">import math
 
-<span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">pythag</span>(pX, pY, tX, tY):
-    <span style="color: #268bd2;">a</span> = pX - tX
-    <span style="color: #268bd2;">b</span> = pY - tY
-    <span style="color: #268bd2;">c</span> = math.sqrt(a ** 2 + b ** 2)
-    <span style="color: #859900; font-weight: bold;">print</span> (c)
+def pythag(pX, pY, tX, tY):
+    a = pX - tX
+    b = pY - tY
+    c = math.sqrt(a ** 2 + b ** 2)
+    print (c)
 </pre>
 </div>
 

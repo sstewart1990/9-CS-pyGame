@@ -72,6 +72,10 @@ for the JavaScript code in this tag.
       <li><a href="3_Lesson.html">Week3</a></li>
       <li><a href="4_Lesson.html">Week4</a></li>
       <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href=“6_Lesson.html">Week6</a></li>
+      <li><a href=“7_Lesson.html">Week7</a></li>
+      <li><a href=“8_Lesson.html">Week8</a></li>
+      <li><a href=“9_Lesson.html">Week9</a></li>
       <li><a href="assessment.html">Assessment</a></li>
     </ul>
   </div>
@@ -140,8 +144,8 @@ BEGIN GAME LOOP
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">player1Image</span> = pygame.image.load(<span style="color: #2aa198;">"gimp2.png"</span>)
-<span style="color: #268bd2;">player1XY</span> = [100, 100]
+<pre class="src src-python">player1Image = pygame.image.load("gimp2.png")
+player1XY = [100, 100]
 </pre>
 </div>
 
@@ -152,7 +156,7 @@ BEGIN GAME LOOP
 <div class="org-src-container">
 
 <pre class="src src-python">screen.fill(black)
-<span style="color: #268bd2;">player1</span> = screen.blit(player1Image, player1XY)
+player1 = screen.blit(player1Image, player1XY)
 </pre>
 </div>
 </li>
@@ -163,8 +167,8 @@ BEGIN GAME LOOP
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">mousePosition</span> = pygame.mouse.get_pos()
-<span style="color: #268bd2;">player1XY</span> = mousePosition[0], mousePosition[1]
+<pre class="src src-python">mousePosition = pygame.mouse.get_pos()
+player1XY = mousePosition[0], mousePosition[1]
 </pre>
 </div>
 <ul class="org-ul">
@@ -207,8 +211,8 @@ Use pygame.image.transform to resize the image.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">player1ImageSizeXY</span> = [80, 60]
-<span style="color: #268bd2;">player1Image</span> = pygame.transform.scale(player1Image, player1ImageSizeXY)
+<pre class="src src-python">player1ImageSizeXY = [80, 60]
+player1Image = pygame.transform.scale(player1Image, player1ImageSizeXY)
 </pre>
 </div>
 <ul class="org-ul">
@@ -277,7 +281,7 @@ DRAW PLAYER1 AT LOCATION player1XY
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">player1XY</span> = mousePosition[0], mousePosition[1]
+<pre class="src src-python">player1XY = mousePosition[0], mousePosition[1]
 </pre>
 </div>
 <ul class="org-ul">
@@ -286,9 +290,9 @@ DRAW PLAYER1 AT LOCATION player1XY
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">newXPosition</span> = mousePosition[0] - (player1ImageSizeXY[0] / 2)
-<span style="color: #268bd2;">newYPosition</span> = mousePosition[1] - (player1ImageSizeXY[1] / 2)
-<span style="color: #268bd2;">player1XY</span> = newXPosition, newYPosition
+<pre class="src src-python">newXPosition = mousePosition[0] - (player1ImageSizeXY[0] / 2)
+newYPosition = mousePosition[1] - (player1ImageSizeXY[1] / 2)
+player1XY = newXPosition, newYPosition
 </pre>
 </div>
 <ul class="org-ul">
